@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Details from "./pages/Details";
 import Home from "./pages/Home";
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/:id">
-            xxxxx
+            <Details />
           </Route>
           <Route exact path="/">
             <Home />

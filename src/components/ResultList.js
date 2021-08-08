@@ -7,6 +7,7 @@ function ResultList({ data }) {
       {data.map((listItem) => {
         return (
           <ListCard
+            key={listItem.objectID}
             id={listItem.objectID}
             title={listItem.title}
             author={listItem.author}
