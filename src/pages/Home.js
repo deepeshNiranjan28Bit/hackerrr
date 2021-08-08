@@ -1,14 +1,19 @@
 import React, { useCallback, useState } from "react";
+import ResultList from "../components/ResultList";
 import { apiGet } from "../misc/config";
 import { SearchButtonWrapper, SearchInput } from "./Home.styled";
 
 const renderResults = (results) => {
   if (results && results.length === 0) {
-    return <div>No results</div>;
+    return <div>No results found on the basis of your search.</div>;
   }
 
   if (results && results.length > 0) {
-    return <div>Found Something</div>;
+    return (
+      <div>
+        <ResultList data={results} />
+      </div>
+    );
   }
 
   return null;
