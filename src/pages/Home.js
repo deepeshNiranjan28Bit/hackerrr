@@ -20,7 +20,8 @@ function Home() {
 
   const onSearch = () => {
     apiGet(`/search?query=${input}`).then((result) => {
-      setResults(result);
+      const { hits } = result;
+      setResults(hits);
     });
   };
 
@@ -55,6 +56,7 @@ function Home() {
           Search
         </button>
       </SearchButtonWrapper>
+      {console.log(results)}
       {renderResults(results)}
     </div>
   );
