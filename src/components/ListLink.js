@@ -1,7 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function ListLink({ id }) {
-  return <div>hey</div>;
+  return (
+    <div>
+      <Link to={id}>Read more about this!</Link>
+    </div>
+  );
 }
 
 export default ListLink;

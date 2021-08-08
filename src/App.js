@@ -6,9 +6,9 @@ function App() {
     <div>
       <Router>
         <Switch>
-          {/* <Route exact path="/">
-          xxxxx
-        </Route> */}
+          <Route exact path="/:id">
+            xxxxx
+          </Route>
           <Route exact path="/">
             <Home />
           </Route>
