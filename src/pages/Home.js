@@ -2,6 +2,18 @@ import React, { useCallback, useState } from "react";
 import { apiGet } from "../misc/config";
 import { SearchButtonWrapper, SearchInput } from "./Home.styled";
 
+const renderResults = (results) => {
+  if (results && results.length === 0) {
+    return <div>No results</div>;
+  }
+
+  if (results && results.length > 0) {
+    return <div>Found Something</div>;
+  }
+
+  return null;
+};
+
 function Home() {
   const [input, setInput] = useState("");
   const [results, setResults] = useState(null);
@@ -43,6 +55,7 @@ function Home() {
           Search
         </button>
       </SearchButtonWrapper>
+      {renderResults(results)}
     </div>
   );
 }
