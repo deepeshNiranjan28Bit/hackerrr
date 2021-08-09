@@ -11,13 +11,14 @@ function Details() {
       setData(result);
     });
   }, [id]);
-
-  const { title, points } = data;
+  console.log(data);
+  const { title, points, url } = data;
 
   return (
     <div>
       <h1>{title}</h1>
       <h3>{points}</h3>
+      <h4>{url}</h4>
     </div>
   );
 }
