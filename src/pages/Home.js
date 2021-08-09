@@ -61,7 +61,6 @@ function Home() {
           Search
         </button>
       </SearchButtonWrapper>
-      {console.log(results)}
       {renderResults(results)}
     </div>
   );

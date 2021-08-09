@@ -12,7 +12,6 @@ function Details() {
       setData(result);
     });
   }, [id]);
-  console.log(data);
   const { title, points, url } = data;
   const { children } = data;
 

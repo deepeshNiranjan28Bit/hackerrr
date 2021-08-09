@@ -2,8 +2,6 @@ import React from "react";
 import StringList from "../components/StringList";
 
 function ChildrenComments({ children }) {
-  console.log(children);
-
   return (
     <div>
       {children
