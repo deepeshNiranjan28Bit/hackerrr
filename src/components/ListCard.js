@@ -1,13 +1,22 @@
 import React from "react";
+import { CardDivWrapper } from "./ListCard.styled";
 import ListLink from "./ListLink";
 
 function ListCard({ title, author, id }) {
   return (
-    <div>
-      <h2>{title}</h2>
-      <h3>{author}</h3>
-      <ListLink id={id} />
-    </div>
+    <CardDivWrapper>
+      <li>
+        <h3>
+          <em>TITLE - </em>
+          {title}
+        </h3>
+        <h4>
+          <em>AUTHOR - </em>
+          {author}
+        </h4>
+        <ListLink id={id} />
+      </li>
+    </CardDivWrapper>
   );
 }
 

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SearchInput = styled.input`
   display: block;
   font-family: "Roboto", sans-serif;
-  width: 200px;
+  width: 350px;
   margin: auto;
   margin-bottom: 8px;
   outline: none;
@@ -39,6 +39,7 @@ export const HeadlineWrapper = styled.div`
 
 export const SearchButtonWrapper = styled.div`
   text-align: center;
+  margin-top: 5px;
   margin-bottom: 35px;
 
   button {
