@@ -7,13 +7,12 @@ function App() {
     <div>
       <Router>
         <Switch>
-          <Route exact path="/:id">
+          <Route exact path="page/:id">
             <Details />
           </Route>
-          <Route exact path="/">
+          <Route path="/">
             <Home />
           </Route>
-          <Route>This is 404 page.</Route>
         </Switch>
       </Router>
     </div>
