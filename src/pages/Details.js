@@ -24,13 +24,13 @@ function Details() {
           <Bounce>
             <h2>
               <u>
-                Title - <strong>{title}</strong>
+                Title - <strong>{title ? title : "Not there"}</strong>
               </u>
             </h2>
             <h3>
-              Points - <strong>{points}</strong>
+              Points - <strong>{points ? points : "Not Found"}</strong>
             </h3>
-            <a href={url}>{url}</a>
+            <a href={url}>{url ? url : "Not Found"}</a>
           </Bounce>
           <ChildrenComments children={children} />
         </DetailsDivWrapper>
