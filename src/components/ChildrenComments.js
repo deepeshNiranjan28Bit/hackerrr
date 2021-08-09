@@ -14,7 +14,7 @@ function ChildrenComments({ children }) {
               />
             );
           })
-        : "Loading Comments"}
+        : ""}
     </div>
   );
 }
