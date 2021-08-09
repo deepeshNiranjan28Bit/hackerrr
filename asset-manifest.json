@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/hackerrr/static/css/main.09b18828.chunk.css",
-    "main.js": "/hackerrr/static/js/main.1a0966a4.chunk.js",
-    "main.js.map": "/hackerrr/static/js/main.1a0966a4.chunk.js.map",
+    "main.js": "/hackerrr/static/js/main.3b488fa0.chunk.js",
+    "main.js.map": "/hackerrr/static/js/main.3b488fa0.chunk.js.map",
     "runtime-main.js": "/hackerrr/static/js/runtime-main.ebbba5be.js",
     "runtime-main.js.map": "/hackerrr/static/js/runtime-main.ebbba5be.js.map",
     "static/js/2.dfbb0991.chunk.js": "/hackerrr/static/js/2.dfbb0991.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ebbba5be.js",
     "static/js/2.dfbb0991.chunk.js",
     "static/css/main.09b18828.chunk.css",
-    "static/js/main.1a0966a4.chunk.js"
+    "static/js/main.3b488fa0.chunk.js"
   ]
 }
