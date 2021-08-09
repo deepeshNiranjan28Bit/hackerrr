@@ -5,17 +5,19 @@ import ListLink from "./ListLink";
 function ListCard({ title, author, id }) {
   return (
     <CardDivWrapper>
-      <li>
-        <h3>
-          <em>TITLE - </em>
-          {title}
-        </h3>
-        <h4>
-          <em>AUTHOR - </em>
-          {author}
-        </h4>
-        <ListLink id={id} />
-      </li>
+      <ul>
+        <li>
+          <h3>
+            <em>TITLE - </em>
+            {title}
+          </h3>
+          <h4>
+            <em>AUTHOR - </em>
+            {author}
+          </h4>
+          <ListLink id={id} />
+        </li>
+      </ul>
     </CardDivWrapper>
   );
 }
