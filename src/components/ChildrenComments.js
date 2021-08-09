@@ -8,7 +8,13 @@ function ChildrenComments({ children }) {
     <div>
       {children
         ? children.map((listItem) => {
-            return <StringList id={listItem.id} comment={listItem.text} />;
+            return (
+              <StringList
+                id={listItem.id}
+                key={listItem.id}
+                comment={listItem.text}
+              />
+            );
           })
         : "Loading Comments"}
     </div>
