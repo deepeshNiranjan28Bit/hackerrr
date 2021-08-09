@@ -3,7 +3,8 @@ import StringList from "../components/StringList";
 
 function ChildrenComments({ children }) {
   return (
-    <div>
+    <div style={{ marginTop: "8vh" }}>
+      <h3 style={{ textAlign: "center" }}>Comments</h3>
       {children
         ? children.map((listItem) => {
             return (

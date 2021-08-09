@@ -21,7 +21,9 @@ function Details() {
       {data ? (
         <DetailsDivWrapper>
           <h2>
-            Title - <strong>{title}</strong>
+            <u>
+              Title - <strong>{title}</strong>
+            </u>
           </h2>
           <h3>
             Points - <strong>{points}</strong>
@@ -30,8 +32,11 @@ function Details() {
           <ChildrenComments children={children} />
         </DetailsDivWrapper>
       ) : (
-        <LoadingWrapper>"Loading the data for you."</LoadingWrapper>
+        <LoadingWrapper>
+          <h3>"Loading the data for you."</h3>
+        </LoadingWrapper>
       )}
+      <div className="bg-balls"></div>
     </div>
   );
 }

@@ -6,14 +6,12 @@ function ResultList({ data }) {
     <div>
       {data.map((listItem) => {
         return (
-          <ul key={listItem.objectID}>
-            <ListCard
-              key={listItem.objectID}
-              id={listItem.objectID}
-              title={listItem.title}
-              author={listItem.author}
-            />
-          </ul>
+          <ListCard
+            key={listItem.objectID}
+            id={listItem.objectID}
+            title={listItem.title}
+            author={listItem.author}
+          />
         );
       })}
     </div>

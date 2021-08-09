@@ -1,16 +1,19 @@
 import React from "react";
+import { WrapperDiv } from "./StringList.styled";
 
 function StringList({ id, comment }) {
   return (
-    <div>
+    <WrapperDiv>
       {comment ? (
-        <li id={id}>
-          <div dangerouslySetInnerHTML={{ __html: comment }} />
-        </li>
+        <ul>
+          <li id={id}>
+            <div dangerouslySetInnerHTML={{ __html: comment }} />
+          </li>
+        </ul>
       ) : (
         ""
       )}
-    </div>
+    </WrapperDiv>
   );
 }
 
