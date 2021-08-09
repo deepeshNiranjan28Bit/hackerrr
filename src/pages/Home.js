@@ -53,7 +53,7 @@ function Home() {
         <h1>
           H A C K <span>E R R R</span>
         </h1>
-        <h4>Wanna know about hacker! Come let me hack you.</h4>
+        <h4>Wanna know about an hacker! Come let me hack you.</h4>
       </HeadlineWrapper>
       <SearchInput
         type="text"
@@ -68,6 +68,7 @@ function Home() {
         </button>
       </SearchButtonWrapper>
       {renderResults(results)}
+      <div className="bg-balls"></div>
     </div>
   );
 }

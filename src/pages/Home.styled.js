@@ -22,7 +22,7 @@ export const SearchInput = styled.input`
 
 export const HeadlineWrapper = styled.div`
   text-align: center;
-  margin-top: 25vh;
+  margin-top: 20vh;
   font-size: 1.4rem;
   color: #64c9cf;
 
