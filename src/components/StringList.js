@@ -1,11 +1,17 @@
 import React from "react";
 
 function StringList({ id, comment }) {
-  if (comment) {
-    var setComment = comment.replace(/(<([^>]+)>)/gi, "");
-  }
-
-  return <div>{comment ? <li id={id}>{setComment}</li> : ""}</div>;
+  return (
+    <div>
+      {comment ? (
+        <li id={id}>
+          <div dangerouslySetInnerHTML={{ __html: comment }} />
+        </li>
+      ) : (
+        ""
+      )}
+    </div>
+  );
 }
 
 export default StringList;
