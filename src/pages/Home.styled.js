@@ -20,13 +20,30 @@ export const SearchInput = styled.input`
   }
 `;
 
+export const HeadlineWrapper = styled.div`
+  text-align: center;
+  margin-top: 25vh;
+  font-size: 1.4rem;
+  color: #64c9cf;
+
+  h1 {
+    font-family: "Montserrat", sans-serif;
+  }
+  h4 {
+    font-family: "Merriweather", serif;
+  }
+  span {
+    color: #b5eaea;
+  }
+`;
+
 export const SearchButtonWrapper = styled.div`
   text-align: center;
   margin-bottom: 35px;
 
   button {
     color: #fff;
-    background-color: blue;
+    background-color: #64c9cf;
     margin: auto;
     padding: 10px 50px;
     font-size: 15px;

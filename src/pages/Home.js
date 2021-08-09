@@ -1,7 +1,11 @@
 import React, { useCallback, useState } from "react";
 import ResultList from "../components/ResultList";
 import { apiGet } from "../misc/config";
-import { SearchButtonWrapper, SearchInput } from "./Home.styled";
+import {
+  HeadlineWrapper,
+  SearchButtonWrapper,
+  SearchInput,
+} from "./Home.styled";
 
 const renderResults = (results) => {
   if (results && results.length === 0) {
@@ -44,11 +48,13 @@ function Home() {
   };
 
   return (
-    <div style={{ textAlign: "center" }}>
-      <div>
-        <h1>HACKERRR</h1>
+    <div className="MainDiv">
+      <HeadlineWrapper>
+        <h1>
+          H A C K <span>E R R R</span>
+        </h1>
         <h4>Wanna know about hacker! Come let me hack you.</h4>
-      </div>
+      </HeadlineWrapper>
       <SearchInput
         type="text"
         placeholder="Search for something"
